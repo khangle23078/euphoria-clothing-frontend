@@ -1,3 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  width: 48px;
+  height: 48px;
+  background-color: white;
+  color: #333333;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+}
+
+.swiper .swiper-button-prev:hover,
+.swiper .swiper-button-next:hover {
+  background-color: #333333;
+  color: white;
+}
+
+.swiper .swiper-button-prev::after,
+.swiper .swiper-button-next::after {
+  font-size: 18px;
+}
+
+.product-slide-heading {
+  font-size: 34px;
+  font-weight: bold;
+  color: #3c4242;
+  margin-bottom: 15px;
+}
+
+.product-slide-heading::before {
+  display: inline-block;
+  width: 6px;
+  content: "";
+  height: 30px;
+  background-color: #8a33fd;
+  border-radius: 10px;
+  margin-right: 10px;
+}
