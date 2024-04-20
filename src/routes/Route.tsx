@@ -6,6 +6,7 @@ import { createBrowserRouter } from "react-router-dom";
 const HomePage = lazy(() => import('@pages/client/HomePage'))
 const ProductDetailPage = lazy(() => import('@pages/client/ProductDetailPage'))
 const LoginPage = lazy(() => import('@pages/auth/LoginPage'))
+const RegisterPage = lazy(() => import('@pages/auth/RegisterPage'))
 
 export const routes = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ export const routes = createBrowserRouter([
       {
         path: 'login',
         element: <LoginPage />
+      },
+      {
+        path: 'register',
+        element: <RegisterPage />
       }
     ]
   }
