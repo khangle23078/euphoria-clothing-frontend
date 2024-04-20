@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { Category } from "src/interfaces/Category"
+import { Category } from "src/interfaces/category"
 
 interface CategorySlideProps {
   category?: Category,

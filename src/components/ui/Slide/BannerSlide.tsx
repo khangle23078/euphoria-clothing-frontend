@@ -4,9 +4,9 @@ import '@styles/style.css'
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-const Slide = () => {
+const BannerSlides = () => {
   return (
-    <div className='px-3  md:px-0'>
+    <div className='px-3 md:px-0'>
       <Swiper
         modules={[Navigation, Autoplay]}
         navigation={true}
@@ -34,4 +34,4 @@ const Slide = () => {
   )
 }
 
-export default Slide
+export default BannerSlides

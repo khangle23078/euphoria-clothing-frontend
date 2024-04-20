@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 li {
@@ -42,9 +42,13 @@ li {
 .product-slide-heading::before {
   display: inline-block;
   width: 6px;
-  content: "";
+  content: '';
   height: 30px;
   background-color: #8a33fd;
   border-radius: 10px;
   margin-right: 10px;
+}
+
+#product-image-slides .swiper-button-next {
+  right: 20%;
 }

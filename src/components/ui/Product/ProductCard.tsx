@@ -6,15 +6,13 @@ interface ProductCardProps {
 
 const ProductCard = ({ image }: ProductCardProps) => {
   return (
-    <>
-      <div>
-        <Link to={`/product/`}>
-          <img src={image} alt="quần áo" width={270.36} height={393.26} className="rounded-lg" />
-        </Link>
-        <h4 className="py-1 text-sm font-normal">Áo thun dài tay</h4>
-        <p>120.000 VNĐ</p>
-      </div>
-    </>
+    <div className="mx-2">
+      <Link to={`/product/ao-thun-dep`}>
+        <img src={image} alt="quần áo" width={270.36} height={393.26} className="rounded-lg" />
+      </Link>
+      <h4 className="py-1 text-sm font-normal">Áo thun dài tay</h4>
+      <p>120.000 VNĐ</p>
+    </div>
   )
 }
 
