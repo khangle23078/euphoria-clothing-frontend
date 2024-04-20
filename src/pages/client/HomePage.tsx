@@ -1,5 +1,5 @@
 import HelmetHeader from "@components/common/HelmetHeader"
-import CategorySlides from "@components/ui/CategorySlide/CategorySlides"
+import CategorySlides from "@components/ui/category/CategorySlides"
 import ProductList from "@components/ui/Product/ProductList"
 import BannerSlides from "@components/ui/Slide/BannerSlide"
 

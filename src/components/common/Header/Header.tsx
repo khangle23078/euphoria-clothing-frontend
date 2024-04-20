@@ -1,4 +1,4 @@
-import Logo from '@assets/Logo.svg'
+import Logo from '@assets/icons/Logo.svg'
 import HeaderNav from './HeaderNav'
 import HeaderAction from './HeaderAction'
 import { Input } from 'antd'
