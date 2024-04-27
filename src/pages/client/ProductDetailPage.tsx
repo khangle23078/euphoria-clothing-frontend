@@ -1,12 +1,12 @@
 import HelmetHeader from "@components/common/HelmetHeader";
-import { ProductSlides } from "@components/ui/Product/ProductSlide";
-import ProductImageSlides from "@components/ui/Slide/ProductImageSlides";
+import { ProductSlides } from "@components/ui/product/ProductSlide";
+import ProductImageSlides from "@components/ui/slide/ProductImageSlides";
 import { Breadcrumb, Button, InputNumber, Rate } from "antd";
 import { ShoppingCart } from "lucide-react";
 import { Suspense, lazy } from "react";
 import { Link } from "react-router-dom";
 
-const ProductReviews = lazy(() => import('@components/ui/Product/ProductReviews'))
+const ProductReviews = lazy(() => import('@components/ui/product/ProductReviews'))
 
 const ProductDetailPage = () => {
   return (

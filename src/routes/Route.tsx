@@ -1,12 +1,14 @@
-import AuthLayout from "@components/layouts/AuthLayout";
-import MainLayout from "@components/layouts/MainLayout";
-import { lazy } from "react";
-import { createBrowserRouter } from "react-router-dom";
+import AdminLayout from '@layouts/AdminLayout'
+import AuthLayout from '@layouts/AuthLayout'
+import MainLayout from '@layouts/MainLayout'
+import { lazy } from 'react'
+import { createBrowserRouter } from 'react-router-dom'
 
 const HomePage = lazy(() => import('@pages/client/HomePage'))
 const ProductDetailPage = lazy(() => import('@pages/client/ProductDetailPage'))
 const LoginPage = lazy(() => import('@pages/auth/LoginPage'))
 const RegisterPage = lazy(() => import('@pages/auth/RegisterPage'))
+const CartPage = lazy(() => import('@pages/client/CartPage'))
 
 export const routes = createBrowserRouter([
   {
@@ -15,13 +17,17 @@ export const routes = createBrowserRouter([
     children: [
       {
         path: '',
-        element: <HomePage />
+        element: <HomePage />,
       },
       {
         path: '/product/:slug',
-        element: <ProductDetailPage />
-      }
-    ]
+        element: <ProductDetailPage />,
+      },
+      {
+        path: 'cart',
+        element: <CartPage />,
+      },
+    ],
   },
   {
     path: 'auth',
@@ -29,12 +35,17 @@ export const routes = createBrowserRouter([
     children: [
       {
         path: 'login',
-        element: <LoginPage />
+        element: <LoginPage />,
       },
       {
         path: 'register',
-        element: <RegisterPage />
-      }
-    ]
-  }
+        element: <RegisterPage />,
+      },
+    ],
+  },
+  {
+    path: 'admin',
+    element: <AdminLayout />,
+    children: [],
+  },
 ])

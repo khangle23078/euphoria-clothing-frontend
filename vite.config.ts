@@ -4,12 +4,16 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(),],
+  plugins: [react()],
   server: {
     port: 3001,
   },
   css: {
-    devSourcemap: false
+    devSourcemap: false,
+  },
+  build: {
+    cssMinify: 'esbuild',
+    cssCodeSplit: true,
   },
   resolve: {
     alias: {
@@ -17,7 +21,8 @@ export default defineConfig({
       '@assets': path.resolve(__dirname, './src/assets'),
       '@pages': path.resolve(__dirname, './src/pages'),
       '@services': path.resolve(__dirname, './src/services'),
-      '@components': path.resolve(__dirname, './src/components')
-    }
-  }
+      '@components': path.resolve(__dirname, './src/components'),
+      '@layouts': path.resolve(__dirname, './src/layouts'),
+    },
+  },
 })

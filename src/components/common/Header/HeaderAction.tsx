@@ -27,15 +27,22 @@ const user_actions = [
 
 const HeaderAction = () => {
   return (
-    <div className="flex items-center gap-3">
-      {user_actions.map(({ id, icon, path }: UserAction) => {
-        return (
-          <NavLink key={id} to={path} className="bg-[#F6F6F6] w-[44px] h-[44px] rounded-lg flex items-center p-3">
-            {icon}
-          </NavLink>
-        )
-      })}
-    </div>
+    <div className="flex items-center gap-3" >
+      {
+        user_actions.map(({ id, icon, path }: UserAction) => {
+          return (
+            <NavLink
+              key={id}
+              to={path}
+              className={({ isActive }) => isActive ?
+                'bg-primary text-white w-[44px] h-[44px] rounded-lg flex items-center p-3'
+                : 'bg-[#F6F6F6] w-[44px] h-[44px] rounded-lg flex items-center p-3'}>
+              {icon}
+            </NavLink>
+          )
+        })
+      }
+    </div >
   )
 }
 

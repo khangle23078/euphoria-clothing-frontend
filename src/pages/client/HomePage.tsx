@@ -1,7 +1,7 @@
 import HelmetHeader from "@components/common/HelmetHeader"
 import CategorySlides from "@components/ui/category/CategorySlides"
-import ProductList from "@components/ui/Product/ProductList"
-import BannerSlides from "@components/ui/Slide/BannerSlide"
+import ProductList from "@components/ui/product/ProductList"
+import BannerSlides from "@components/ui/slide/BannerSlide"
 
 const HomePage = () => {
   return (
