@@ -9,6 +9,7 @@ const ProductDetailPage = lazy(() => import('@pages/client/ProductDetailPage'))
 const LoginPage = lazy(() => import('@pages/auth/LoginPage'))
 const RegisterPage = lazy(() => import('@pages/auth/RegisterPage'))
 const CartPage = lazy(() => import('@pages/client/CartPage'))
+const DashboardPage = lazy(() => import('@pages/admin/Dashboard'))
 
 export const routes = createBrowserRouter([
   {
@@ -46,6 +47,11 @@ export const routes = createBrowserRouter([
   {
     path: 'admin',
     element: <AdminLayout />,
-    children: [],
+    children: [
+      {
+        path: '',
+        element: <DashboardPage />,
+      },
+    ],
   },
 ])

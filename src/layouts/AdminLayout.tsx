@@ -8,6 +8,7 @@ import {
 import type { MenuProps } from 'antd'
 import { Layout, Menu, theme } from 'antd'
 import { Outlet } from 'react-router-dom'
+import Logo from '@assets/icons/Logo.svg'
 
 const { Header, Content, Footer, Sider } = Layout
 
@@ -50,7 +51,7 @@ const AdminLayout: React.FC = () => {
         collapsed={collapsed}
         onCollapse={(value) => setCollapsed(value)}
       >
-        <div className='demo-logo-vertical' />
+        <img src={Logo} alt='logo' className='m-3 mx-auto object-cover' />
         <Menu
           theme='dark'
           defaultSelectedKeys={['1']}
