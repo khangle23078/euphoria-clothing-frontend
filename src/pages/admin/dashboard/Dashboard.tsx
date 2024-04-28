@@ -49,7 +49,7 @@ const columns = [
 const DashboardPage = () => {
   return (
     <div>
-      <div className='my-3 grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4'>
+      <div className='grid grid-cols-1 gap-3 my-3 md:grid-cols-2 lg:grid-cols-4'>
         <InforCard
           title='Tổng số sản phẩm'
           number={23}

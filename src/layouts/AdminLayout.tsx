@@ -7,7 +7,7 @@ import {
 } from '@ant-design/icons'
 import type { MenuProps } from 'antd'
 import { Layout, Menu, theme } from 'antd'
-import { Outlet } from 'react-router-dom'
+import { NavLink, Outlet } from 'react-router-dom'
 import Logo from '@assets/icons/Logo.svg'
 
 const { Header, Content, Footer, Sider } = Layout
@@ -30,10 +30,12 @@ function getItem(
 
 const items: MenuItem[] = [
   getItem('Dashboard', '1', <PieChartOutlined />),
-  getItem('Danh mục', '2', <DesktopOutlined />),
+  getItem('Danh mục', '2', <DesktopOutlined />, [
+    getItem(<NavLink to={'category'}>Danh sách</NavLink>, '3'),
+  ]),
   getItem('Sản phẩm', 'sub1', <UserOutlined />, [
-    getItem('Danh sách', '3'),
-    getItem('Thêm mới', '4'),
+    getItem('Danh sách', '4'),
+    getItem('Thêm mới', '5'),
   ]),
   getItem('Đơn hàng', 'sub2', <TeamOutlined />),
 ]

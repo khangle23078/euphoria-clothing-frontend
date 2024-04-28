@@ -23,6 +23,7 @@ export default defineConfig({
       '@services': path.resolve(__dirname, './src/services'),
       '@components': path.resolve(__dirname, './src/components'),
       '@layouts': path.resolve(__dirname, './src/layouts'),
+      '@hooks': path.resolve(__dirname, './src/hooks'),
     },
   },
 })

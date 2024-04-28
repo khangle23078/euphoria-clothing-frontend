@@ -54,7 +54,7 @@ export const data = {
 }
 
 const SaleChart = () => {
-  return <Line options={options} data={data} />
+  return <Line options={options} data={data} className='max-h-[300px]' />
 }
 
 export default SaleChart

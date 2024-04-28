@@ -1,4 +1,4 @@
-export interface Image {
-  url: string,
+export interface ImageType {
+  url: string
   public_id: string
 }
