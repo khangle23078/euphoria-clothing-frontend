@@ -32,10 +32,11 @@ const items: MenuItem[] = [
   getItem('Dashboard', '1', <PieChartOutlined />),
   getItem('Danh mục', '2', <DesktopOutlined />, [
     getItem(<NavLink to={'category'}>Danh sách</NavLink>, '3'),
+    getItem(<NavLink to={'category/add'}>Thêm mới</NavLink>, '4'),
   ]),
   getItem('Sản phẩm', 'sub1', <UserOutlined />, [
-    getItem('Danh sách', '4'),
-    getItem('Thêm mới', '5'),
+    getItem('Danh sách', '5'),
+    getItem('Thêm mới', '6'),
   ]),
   getItem('Đơn hàng', 'sub2', <TeamOutlined />),
 ]

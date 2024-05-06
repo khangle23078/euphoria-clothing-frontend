@@ -10,9 +10,8 @@ const LoginPage = lazy(() => import('@pages/auth/LoginPage'))
 const RegisterPage = lazy(() => import('@pages/auth/RegisterPage'))
 const CartPage = lazy(() => import('@pages/client/CartPage'))
 const DashboardPage = lazy(() => import('@pages/admin/dashboard/Dashboard'))
-const CategoryListPage = lazy(
-  () => import('@pages/admin/category/CategoryList'),
-)
+const CategoryListPage = lazy(() => import('@pages/admin/category/CategoryList'))
+const CategoryAddPage = lazy(() => import('@pages/admin/category/CategoryAdd'))
 
 export const routes = createBrowserRouter([
   {
@@ -58,6 +57,10 @@ export const routes = createBrowserRouter([
       {
         path: 'category',
         element: <CategoryListPage />,
+      },
+      {
+        path: 'category/add',
+        element: <CategoryAddPage />,
       },
     ],
   },

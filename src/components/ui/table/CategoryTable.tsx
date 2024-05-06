@@ -1,8 +1,8 @@
+import { Category } from '@interfaces/category'
+import { Response } from '@interfaces/response'
 import { Card, Image, Popconfirm, Table, Typography } from 'antd'
 import { EditIcon, TrashIcon } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import { Category } from 'src/interfaces/category'
-import { Response } from 'src/interfaces/response'
 
 type CategoryTableProps = {
   loading: boolean
