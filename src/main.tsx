@@ -8,11 +8,11 @@ import { antdTheme } from './configs/antd.config.ts'
 import { routes } from './routes/Route.tsx'
 import './styles/style.css'
 
-const queryClient = new QueryClient()
+export const queryClient = new QueryClient()
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <QueryClientProvider client={queryClient}>
-    <ConfigProvider theme={antdTheme} >
+    <ConfigProvider theme={antdTheme}>
       <Suspense fallback={<Loading />}>
         <RouterProvider router={routes} />
       </Suspense>

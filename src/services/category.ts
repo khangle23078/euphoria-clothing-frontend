@@ -11,3 +11,7 @@ export const getCategories = () => {
 export const addCategory = (data: Omit<Category, '_id'>) => {
   return apiClient.post<Response<null>>(`${baseApi}/categories/`, data)
 }
+
+export const deleteCategory = (_id: string) => {
+  return apiClient.delete(`${baseApi}/categories/${_id}`)
+}
